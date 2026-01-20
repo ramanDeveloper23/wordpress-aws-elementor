@@ -1,0 +1,90 @@
+# WordPress Core Files (optional - uncomment if you want to exclude core)
+# wp-admin/
+# wp-includes/
+# wp-*.php
+# xmlrpc.php
+# license.txt
+# readme.html
+
+# WordPress Configuration (contains sensitive data)
+wp-config.php
+
+# WordPress Content - Uploads (user uploaded files)
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/cache/
+wp-content/blogs.dir/
+wp-content/upgrade/
+wp-content/backups/
+
+# WordPress Debug Log
+wp-content/debug.log
+*.log
+
+# WordPress Plugins - Third Party (keep your custom plugins)
+# Uncomment if you want to exclude third-party plugins
+# wp-content/plugins/akismet/
+# wp-content/plugins/hello.php
+
+# WordPress Themes - Third Party (keep your custom themes)
+# Uncomment if you want to exclude default themes
+# wp-content/themes/twentytwentythree/
+# wp-content/themes/twentytwentyfour/
+# wp-content/themes/twentytwentyfive/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Composer
+vendor/
+composer.lock
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# Environment Files
+.env
+.env.local
+.env.*.local
+*.env
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Archive Files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# WordPress ZIP files
+wordpress-*.zip
