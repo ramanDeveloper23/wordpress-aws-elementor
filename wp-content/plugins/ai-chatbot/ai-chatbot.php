@@ -209,7 +209,7 @@ class AI_Chatbot {
 	private function get_predefined_responses() {
 		return array(
 			'greeting' => array(
-				'message' => 'Hello! I\'m here to help you with our makeup services. What would you like to know?',
+				'message' => 'Hello! I\'m here to help you with our makeup services.',
 				'options' => array(
 					array(
 						'text' => 'Bridal Makeup Services',
@@ -244,14 +244,60 @@ class AI_Chatbot {
 					),
 				),
 			),
-			'learn_makeup' => array(
-				'message' => 'Learn makeup with our expert instructors! We offer comprehensive makeup classes for all skill levels, from beginners to advanced techniques.',
+			'bridal_learning' => array(
+				'message' => 'Great! I recommend our Intermediate Masterclass. It covers advanced bridal techniques, contouring, and airbrush. Would you like to see available dates?',
 				'options' => array(
 					array(
 						'text' => 'View Learn Makeup Page',
 						'id'   => 'view_learn',
 						'type' => 'link',
 						'url'  => $this->get_service_url( 'learn_makeup' ),
+					),
+					array(
+						'text' => 'See Available Dates',
+						'id'   => 'contact',
+					),
+					array(
+						'text' => 'Back to Main Menu',
+						'id'   => 'greeting',
+					),
+				),
+			),
+			'intermediate_masterclass' => array(
+				'message' => 'Perfect choice! Our Intermediate Masterclass is ideal for those looking to master bridal makeup techniques. The course includes advanced contouring, airbrush application, and long-lasting makeup techniques perfect for weddings.',
+				'options' => array(
+					array(
+						'text' => 'View Learn Makeup Page',
+						'id'   => 'view_learn',
+						'type' => 'link',
+						'url'  => $this->get_service_url( 'learn_makeup' ),
+					),
+					array(
+						'text' => 'Check Pricing',
+						'id'   => 'pricing',
+					),
+					array(
+						'text' => 'Book a Class',
+						'id'   => 'contact',
+					),
+					array(
+						'text' => 'Back to Main Menu',
+						'id'   => 'greeting',
+					),
+				),
+			),
+			'learn_makeup' => array(
+				'message' => 'Learn makeup with our expert instructors! We offer comprehensive makeup classes for all skill levels, from beginners to advanced techniques. Our Intermediate Masterclass is perfect for bridal makeup techniques.',
+				'options' => array(
+					array(
+						'text' => 'View Learn Makeup Page',
+						'id'   => 'view_learn',
+						'type' => 'link',
+						'url'  => $this->get_service_url( 'learn_makeup' ),
+					),
+					array(
+						'text' => 'Intermediate Masterclass',
+						'id'   => 'intermediate_masterclass',
 					),
 					array(
 						'text' => 'Back to Main Menu',
@@ -359,7 +405,7 @@ class AI_Chatbot {
 		$show_on_homepage = get_option( 'ai_chatbot_show_on_homepage', false );
 		$bridal_url = get_option( 'ai_chatbot_bridal_makeup_url', '' );
 		$learn_url = get_option( 'ai_chatbot_learn_makeup_url', '' );
-		$welcome_message = get_option( 'ai_chatbot_welcome_message', 'Hi! How can I help you choose the right program?' );
+		$welcome_message = get_option( 'ai_chatbot_welcome_message', 'Hello! I\'m here to help you with our makeup services.' );
 		$assistant_name = get_option( 'ai_chatbot_assistant_name', 'Visage Assistant' );
 		?>
 		<div class="wrap">
